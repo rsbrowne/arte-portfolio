@@ -1,0 +1,32 @@
+// Fonts
+$font-family-heading: "Montserrat";
+$font-family-body: "Montserrat";
+
+// Font Weights & Examples
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Colors
+$color-dark: #232323;
+$color-light: #FFFFFF;
+$color-brand-primary: #936CA4;
+
+// Breakpoints
+// We use EM for breakpoints to maintain consistency in all browsers.
+
+// 600px
+$breakpoint-small: "only screen and (max-width: 37.5em)";
+// 750px
+$breakpoint-small-medium: "only screen and (max-width: 46.875em)";
+// 900px
+$breakpoint-medium-small: "only screen and (max-width: 56.25em)";
+// 1000px
+$breakpoint-medium: "only screen and (max-width: 62.5em)";
+// 1200px
+$breakpoint-medium-large: "only screen and (max-width: 75em)";
+// 1300px
+$breakpoint-large: "only screen and (max-width: 81.250em)";
+// 1400px
+$breakpoint-extra-large: "only screen and (max-width: 87.5em)";
