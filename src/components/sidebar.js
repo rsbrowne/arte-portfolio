@@ -3,9 +3,9 @@ import React from 'react'
 const Sidebar = () => {
 
   return (
-    <React.Fragment>
+    <aside className="sidebar">
       <h1>Sidebar goes here</h1>
-    </React.Fragment>
+    </aside>
   )
 }
 

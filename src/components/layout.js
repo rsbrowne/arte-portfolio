@@ -1,15 +1,16 @@
 import React from 'react'
 
 import '../styles/main.scss'
-import Sidebar from './sidebar';
 
 const Layout = (props) => {
 
   return (
-    <React.Fragment>
+    <div className="page-container">
       <Sidebar></Sidebar>
-      {props.children}
-    </React.Fragment>
+      <div className="page-content">
+        {props.children}
+      </div>
+    </div>
   )
 }
 
