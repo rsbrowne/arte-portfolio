@@ -4,9 +4,13 @@ import Layout from '../components/layout'
 
 import '../styles/main.scss'
 
-export default () => {
+const IndexPage = () => {
 
-  <Layout>
-    <div>Hello World!</div>
-  </Layout>
+  return (
+    <Layout>
+      <div>Hello World!</div>
+    </Layout>
+  )
 }
+
+export default IndexPage
