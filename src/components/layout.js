@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Sidebar from './sidebar';
+
 import '../styles/main.scss'
 
 const Layout = (props) => {
