@@ -1,0 +1,27 @@
+.navigation {
+
+}
+
+.navigation__inner {
+
+}
+
+.navigation__item {
+  margin-bottom: 2.5rem;
+
+  a {
+    color: $color-light;
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+}
+
+.navigation__social {
+  width: 100%;
+  display: flex;
+}
+
+.navigation__icon {
+  width: 2rem;
+  margin-right: 2.5rem;
+}

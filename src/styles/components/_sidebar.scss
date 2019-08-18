@@ -1,3 +1,38 @@
 .sidebar {
   height: 100%;
+  width: 23.5%;
+  min-width: 30rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0 6.5rem;
+  box-sizing: border-box;
+  background: $color-dark;
+}
+
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+  color: $color-light;
+}
+
+.sidebar__logo {
+  width: 17rem;
+}
+
+.sidebar__title {
+  width: 100%;
+  border-bottom: 1px solid $color-light;
+  padding-bottom: 2rem;
+  margin-bottom: 8rem;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  h5 {
+    margin-bottom: 1rem;
+    font-weight: 100;
+  }
 }

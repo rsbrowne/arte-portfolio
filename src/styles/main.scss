@@ -1,15 +1,16 @@
 // Abstracts
 @import "abstracts/reset";
-@import "abstracts/fonts";
 @import "abstracts/vars";
 @import "abstracts/mixins";
 @import "abstracts/typography";
+@import "abstracts/base";
 
 // Components
 @import "components/layout";
 @import "components/header";
 @import "components/footer";
 @import "components/sidebar";
+@import "components/navigation";
 
 // Pages
 @import "pages/index";

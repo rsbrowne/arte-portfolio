@@ -39,8 +39,36 @@ h3 {
   line-height: 1.414;
 }
 
+h4 {
+  font-family: $font-family-heading;
+  font-size: 2.1rem;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+}
+
+h5 {
+  font-family: $font-family-heading;
+  font-size: 1.8rem;
+  font-weight: $font-weight-light;
+  line-height: 1;
+}
+
+h6 {
+  font-family: $font-family-heading;
+  font-size: 1.7rem;
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.414;
+}
+
 p {
   font-family: $font-family-heading;
   font-size: 1.6rem;
   line-height: 1.414;
+}
+
+a {
+  font-family: $font-family-heading;
+  font-size: 1.6rem;
+  line-height: 1.414;
+  text-decoration: none;
 }
