@@ -6,3 +6,7 @@
     grid-template-columns: 1fr;
   }
 }
+
+.page-content {
+  grid-column-start: 2;
+}

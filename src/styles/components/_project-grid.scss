@@ -1,0 +1,6 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40vw 40vw 40vw 40vw;
+  grid-template-areas: "pwrd allianz-uk allianz-uk" "kumon kumon pf" "harveys bh bh" "tdf wmb f1";
+}
