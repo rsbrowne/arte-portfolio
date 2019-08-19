@@ -9,16 +9,40 @@
   padding: 0 6.5rem;
   box-sizing: border-box;
   background: $color-dark;
+
+  @media #{$breakpoint-medium} {
+    width: 100%;
+    position: relative;
+    padding: 0 4rem;
+  }
+
+  @media #{$breakpoint-small} {
+    padding: 1rem 2rem;
+  }
 }
 
 .sidebar__content {
   display: flex;
   flex-direction: column;
   color: $color-light;
+
+  @media #{$breakpoint-medium} {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .sidebar__logo {
   width: 17rem;
+
+  @media #{$breakpoint-medium} {
+    width: 8.5rem;
+  }
+
+  @media #{$breakpoint-small} {
+    width: 5.5rem;
+  }
 }
 
 .sidebar__title {
@@ -26,6 +50,10 @@
   border-bottom: 1px solid $color-light;
   padding-bottom: 2rem;
   margin-bottom: 8rem;
+
+  @media #{$breakpoint-medium} {
+    display: none;
+  }
 
   h4 {
     margin-bottom: 1rem;

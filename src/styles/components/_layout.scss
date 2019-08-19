@@ -1,5 +1,8 @@
 .page-container {
   display: grid;
   grid-template-columns: 23.5% 1fr;
-  height: 100vh;
+
+  @media #{$breakpoint-medium} {
+    grid-template-columns: 1fr;
+  }
 }

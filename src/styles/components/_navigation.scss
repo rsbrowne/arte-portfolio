@@ -1,13 +1,17 @@
-.navigation {
-
-}
-
 .navigation__inner {
-
+  @media #{$breakpoint-medium} {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation__item {
   margin-bottom: 2.5rem;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: 0;
+    margin-left: 2rem;
+  }
 
   a {
     color: $color-light;
@@ -19,9 +23,18 @@
 .navigation__social {
   width: 100%;
   display: flex;
+
+  @media #{$breakpoint-medium} {
+    align-items: center;
+  }
 }
 
 .navigation__icon {
   width: 2rem;
   margin-right: 2.5rem;
+
+  @media #{$breakpoint-medium} {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
 }
