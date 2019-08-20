@@ -35,6 +35,41 @@ const ProjectGrid = () => {
           }
         }
       },
+      harveys: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Harveys"}}}) {
+        edges {
+          node {
+            ...ProjectInfo
+          }
+        }
+      },
+      bh: allMarkdownRemark(filter: {frontmatter: {title: {eq: "BH"}}}) {
+        edges {
+          node {
+            ...ProjectInfo
+          }
+        }
+      },
+      tdf: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Tour De France"}}}) {
+        edges {
+          node {
+            ...ProjectInfo
+          }
+        }
+      },
+      wmb: allMarkdownRemark(filter: {frontmatter: {title: {eq: "WMB"}}}) {
+        edges {
+          node {
+            ...ProjectInfo
+          }
+        }
+      },
+      f1: allMarkdownRemark(filter: {frontmatter: {title: {eq: "F1"}}}) {
+        edges {
+          node {
+            ...ProjectInfo
+          }
+        }
+      },
     }
   `)
 
@@ -51,6 +86,21 @@ const ProjectGrid = () => {
       </Link>
       <Link to="/" aria-label="PF" className="project-grid__item project-grid__item--allianz-pf">
         <Img fluid={projects.pf.edges[0].node.frontmatter.cover.childImageSharp.fluid} />
+      </Link>
+      <Link to="/" aria-label="Harveys" className="project-grid__item project-grid__item--harveys">
+        <Img fluid={projects.harveys.edges[0].node.frontmatter.cover.childImageSharp.fluid} />
+      </Link>
+      <Link to="/" aria-label="BH" className="project-grid__item project-grid__item--bh">
+        <Img fluid={projects.bh.edges[0].node.frontmatter.cover.childImageSharp.fluid} />
+      </Link>
+      <Link to="/" aria-label="Tour De France" className="project-grid__item project-grid__item--tdf">
+        <Img fluid={projects.tdf.edges[0].node.frontmatter.cover.childImageSharp.fluid} />
+      </Link>
+      <Link to="/" aria-label="WMB" className="project-grid__item project-grid__item---wmb">
+        <Img fluid={projects.wmb.edges[0].node.frontmatter.cover.childImageSharp.fluid} />
+      </Link>
+      <Link to="/" aria-label="F1" className="project-grid__item project-grid__item--f1">
+        <Img fluid={projects.f1.edges[0].node.frontmatter.cover.childImageSharp.fluid} />
       </Link>
     </div>
   )
