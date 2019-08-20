@@ -6,13 +6,13 @@
 
   @media #{$breakpoint-medium} {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 40vw);
+    grid-template-rows: repeat(6, 50vw);
     grid-template-areas: "pwrd pf" "allianz-uk allianz-uk" "f1 harveys" "kumon kumon" "tdf wmb" "bh bh";
   }
 
   @media #{$breakpoint-small} {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 50vw);
+    grid-template-rows: repeat(9, 75vw);
     grid-template-areas: "pwrd" "allianz-uk" "kumon" "pf" "harveys" "bh" "tdf" "wmb" "f1";
   }
 }
