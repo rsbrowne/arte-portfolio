@@ -9,4 +9,8 @@
 
 .page-content {
   grid-column-start: 2;
+
+  @media #{$breakpoint-medium} {
+    grid-column-start: auto;
+  }
 }
