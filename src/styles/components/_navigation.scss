@@ -6,7 +6,7 @@
 }
 
 .navigation__item {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 
   @media #{$breakpoint-medium} {
     margin-bottom: 0;
@@ -16,7 +16,7 @@
   a {
     color: $color-light;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

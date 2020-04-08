@@ -1,17 +1,14 @@
-import React from 'react'
+import React from "react"
 
-import Sidebar from './sidebar';
+import Sidebar from "./sidebar"
 
-import '../styles/main.scss'
+import "../styles/main.scss"
 
-const Layout = (props) => {
-
+const Layout = props => {
   return (
     <div className="page-container">
-      <Sidebar></Sidebar>
-      <div className="page-content">
-        {props.children}
-      </div>
+      <Sidebar />
+      <div className="page-content">{props.children}</div>
     </div>
   )
 }
