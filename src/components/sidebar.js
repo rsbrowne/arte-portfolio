@@ -3,8 +3,6 @@ import { Link } from "gatsby"
 
 import Navigation from "./navigation"
 
-import logo from "../images/logo.svg"
-
 const Sidebar = () => {
   return (
     <aside className="sidebar">
