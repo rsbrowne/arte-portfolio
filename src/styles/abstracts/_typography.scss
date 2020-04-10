@@ -1,5 +1,6 @@
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%;
+  /* 1rem = 10px */
 
   @media #{$breakpoint-medium-large} {
     font-size: 60%;
@@ -10,11 +11,13 @@ html {
   }
 
   @media #{$breakpoint-small-medium} {
-    font-size: 55%; /* 1rem = 8.8px */
+    font-size: 55%;
+    /* 1rem = 8.8px */
   }
 
   @media #{$breakpoint-small} {
-    font-size: 50%; /* 1rem = 8px */
+    font-size: 50%;
+    /* 1rem = 8px */
   }
 }
 
@@ -71,4 +74,8 @@ a {
   font-size: 1.6rem;
   line-height: 1.414;
   text-decoration: none;
+
+  &:hover {
+    color: $color-brand-primary;
+  }
 }

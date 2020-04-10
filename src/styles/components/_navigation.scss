@@ -17,6 +17,10 @@
     color: $color-light;
     text-decoration: none;
     font-size: 2rem;
+
+    &:hover {
+      color: $color-brand-primary;
+    }
   }
 }
 
