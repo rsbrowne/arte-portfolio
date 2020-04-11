@@ -9,6 +9,7 @@
 
 .page-content {
   grid-column-start: 2;
+  min-height: 100vh;
 
   @media #{$breakpoint-medium} {
     grid-column-start: auto;
