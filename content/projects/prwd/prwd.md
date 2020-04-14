@@ -10,6 +10,10 @@ images:
     image_alt: "prwd 1"
   - image: ./2-prwd.png
     image_alt: "prwd 2"
+  - image: ./3-prwd.png
+    image_alt: "prwd 3"
+  - image: ./4-prwd.png
+    image_alt: "prwd 4"
 cover: ./prwd-cover.png
 ---
 
