@@ -1,5 +1,19 @@
 const path = require(`path`)
 
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === "MarkdownRemark") {
+    const slug = node.frontmatter.slug
+
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug,
+    })
+  }
+}
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
@@ -10,8 +24,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMarkdownRemark {
         edges {
           node {
-            frontmatter {
+            fields {
               slug
+            }
+            frontmatter {
+              title
             }
           }
         }
@@ -27,11 +44,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    console.log(node)
     createPage({
-      path: `projects/${node.frontmatter.slug}`,
+      title: node.frontmatter.title,
+      path: `projects/${node.fields.slug}`,
       component: projectTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        slug: node.fields.slug,
+      }, // additional data can be passed via context
     })
   })
 }

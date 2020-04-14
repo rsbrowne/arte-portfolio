@@ -4,8 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 export const query = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         title_detail
@@ -24,17 +24,20 @@ export const query = graphql`
   }
 `
 
-const ProjectPage = ({ data }) => {
-  console.log(data)
+const ProjectPage = ({
+  data: {
+    markdownRemark: { frontmatter, html },
+  },
+}) => {
   return (
     <Layout>
       <div className="project">
         <div className="project__intro">
           <h3 className="project__subtitle">Project</h3>
-          {/* <h1 className="project__title">{frontmatter.title}</h1> */}
+          <h1 className="project__title">{frontmatter.title}</h1>
           <div
             className="project__content"
-            // dangerouslySetInnerHTML={{ __html: html }}
+            dangerouslySetInnerHTML={{ __html: html }}
           ></div>
         </div>
         <div className="project__images"></div>
