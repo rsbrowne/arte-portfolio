@@ -4,7 +4,12 @@ title_detail: "PRWD - So it is"
 slug: "prwd"
 category: "Work Stuff"
 color: "#cecece"
-images: "prwd"
+# images: ["./1-prwd.png", "./2-prwd.png", "./3-prwd.png", "./4-prwd.png"]
+images:
+  - image: ./1-prwd.png
+    image_alt: "prwd 1"
+  - image: ./2-prwd.png
+    image_alt: "prwd 2"
 cover: ./prwd-cover.png
 ---
 

@@ -6,32 +6,32 @@
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-sass',
+    "gatsby-plugin-sass",
     // 'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-transformer-remark',
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'projects',
+        name: "projects",
         path: `${__dirname}/content/projects`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
+        name: "images",
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Montserrat']
-        }
-      }
+          families: ["Montserrat"],
+        },
+      },
     },
-  ]
+  ],
 }

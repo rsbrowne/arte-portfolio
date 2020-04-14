@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 
@@ -11,12 +12,15 @@ export const query = graphql`
         title_detail
         slug
         color
-        cover {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid
+        images {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
+          image_alt
         }
       }
       html
@@ -43,7 +47,16 @@ const ProjectPage = ({
         <div
           className="project__images"
           style={{ backgroundColor: frontmatter.color }}
-        ></div>
+        >
+          {frontmatter.images &&
+            frontmatter.images.map((image, i) => (
+              <Img
+                fluid={image.image.childImageSharp.fluid}
+                key={`Image ${i}`}
+                alt={image.image_alt}
+              />
+            ))}
+        </div>
         <div className="project__footer"></div>
       </div>
     </Layout>
