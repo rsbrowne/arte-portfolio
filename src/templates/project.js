@@ -40,7 +40,10 @@ const ProjectPage = ({
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
         </div>
-        <div className="project__images"></div>
+        <div
+          className="project__images"
+          style={{ backgroundColor: frontmatter.color }}
+        ></div>
         <div className="project__footer"></div>
       </div>
     </Layout>
