@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import Footer from "../components/footer"
 
 export const query = graphql`
   query($slug: String!) {
@@ -57,7 +58,7 @@ const ProjectPage = ({
               />
             ))}
         </div>
-        <div className="project__footer"></div>
+        <Footer />
       </div>
     </Layout>
   )
