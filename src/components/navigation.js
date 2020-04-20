@@ -16,9 +16,6 @@ const Navigation = () => {
           <Link to="/cv">CV</Link>
         </li>
         <li className="navigation__item">
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li className="navigation__item">
           <div className="navigation__social">
             <a href="#">
               <img src={twitter} alt="twitter" className="navigation__icon" />
