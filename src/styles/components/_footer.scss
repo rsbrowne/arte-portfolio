@@ -6,6 +6,18 @@
   padding: 6rem;
 
   &__text {
-    // text-align: center;
+    margin: 2.5rem 0;
+  }
+
+  .button {
+    padding: 1.5rem 2.5rem;
+    color: $color-light;
+    background-color: $color-dark;
+    border-radius: 1000rem;
+    font-size: 2rem;
+
+    &:hover {
+      background-color: $color-brand-primary;
+    }
   }
 }
